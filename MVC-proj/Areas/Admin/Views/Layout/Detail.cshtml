@@ -1,0 +1,24 @@
+﻿@model Layout
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Details:</h4>
+                <p class="card-description">
+
+                </p>
+                <p> 
+                    @Html.Raw(Model.Description) pages
+                </p>
+                <div style="width: 200px; height: 200px; border-radius:50%; object-fit:cover;">
+                    <img src="~/img/@Model.Image" alt="image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
